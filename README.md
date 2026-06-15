@@ -1,70 +1,134 @@
-# Getting Started with Create React App
+<div align="center">
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# 🎬 MovieApp
 
-## Available Scripts
+### A modern movie browsing experience powered by TMDB API & React
 
-In the project directory, you can run:
+[![Live Demo](https://img.shields.io/badge/Live%20Demo-Vercel-black?style=for-the-badge&logo=vercel)](https://movie-app-ruby-zeta.vercel.app)
+[![GitHub](https://img.shields.io/badge/GitHub-Eng--mohamed33-181717?style=for-the-badge&logo=github)](https://github.com/Eng-mohamed33)
+[![React](https://img.shields.io/badge/React-19-61DAFB?style=for-the-badge&logo=react)](https://reactjs.org)
+[![TMDB](https://img.shields.io/badge/TMDB-API-01B4E4?style=for-the-badge&logo=themoviedatabase)](https://www.themoviedb.org)
 
-### `npm start`
+</div>
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+---
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## ✨ Features
 
-### `npm test`
+| Feature | Description |
+|---|---|
+| 🔥 Trending | Browse trending movies updated weekly |
+| 🔍 Search | Search any movie instantly |
+| 🎭 Genre Filter | Filter by Action, Comedy, Horror & more |
+| 📅 Year Filter | Browse movies from any year |
+| ⭐ Rating Filter | Filter by minimum rating |
+| 🛡️ Safe Mode | Family-friendly content filter |
+| ❤️ Favorites | Save your favorite movies |
+| 🔖 Watchlist | Track movies you want to watch |
+| ⭐ User Rating | Rate movies yourself (1-10) |
+| 📲 Share | Share movies via WhatsApp or copy link |
+| 🎬 Trailers | Watch official YouTube trailers |
+| 👥 Cast | Full cast details for every movie |
+| 🎥 Similar Movies | Discover related movies |
+| 🌍 10 Languages | Arabic, English, French, German & more |
+| ♾️ Infinite Scroll | Seamless browsing experience |
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+---
 
-### `npm run build`
+## 🛠️ Tech Stack
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+![React](https://img.shields.io/badge/React-19-61DAFB?style=flat&logo=react)
+![React Router](https://img.shields.io/badge/React_Router-7-CA4245?style=flat&logo=reactrouter)
+![Axios](https://img.shields.io/badge/Axios-1.x-5A29E4?style=flat&logo=axios)
+![CSS3](https://img.shields.io/badge/CSS3-Custom-1572B6?style=flat&logo=css3)
+![TMDB](https://img.shields.io/badge/TMDB-API-01B4E4?style=flat&logo=themoviedatabase)
+![Vercel](https://img.shields.io/badge/Vercel-Deployed-black?style=flat&logo=vercel)
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+---
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## 🚀 Getting Started
 
-### `npm run eject`
+### Prerequisites
+- Node.js v18+
+- TMDB API Key from [themoviedb.org](https://www.themoviedb.org)
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+### Installation
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+```bash
+# Clone the repo
+git clone https://github.com/Eng-mohamed33/movie-app.git
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+# Navigate to project
+cd movie-app
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+# Install dependencies
+npm install
+```
 
-## Learn More
+### Setup Environment
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+Create a `.env` file in the root directory:
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+```env
+REACT_APP_TMDB_KEY=your_api_key_here
+```
 
-### Code Splitting
+### Run
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+```bash
+npm start
+```
 
-### Analyzing the Bundle Size
+Open [https://movie-app-ruby-zeta.vercel.app](https://movie-app-ruby-zeta.vercel.app) in your browser.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+---
 
-### Making a Progressive Web App
+## 📁 Project Structure
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+src/
 
-### Advanced Configuration
+├── components/
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+│   ├── Navbar.js            # Navigation & Search
 
-### Deployment
+│   └── MovieCard.js         # Movie card component
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+├── pages/
 
-### `npm run build` fails to minify
+│   ├── Home.js              # Main page with filters
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+│   ├── MovieDetails.js      # Movie details page
+
+│   ├── Search.js            # Search results page
+
+│   └── Favorites.js         # Favorites & Watchlist
+
+├── services/
+
+│   └── api.js               # TMDB API calls
+
+├── context/
+
+│   └── FavoritesContext.js  # Global state
+
+└── index.css                # Global styles
+
+---
+
+## 🌍 Supported Languages
+
+🇸🇦 Arabic • 🇺🇸 English • 🇫🇷 French • 🇮🇹 Italian • 🇹🇷 Turkish • 🇮🇷 Persian • 🇩🇪 German • 🇪🇸 Spanish • 🇯🇵 Japanese • 🇰🇷 Korean
+
+---
+
+## 📄 License
+
+This project uses the [TMDB API](https://www.themoviedb.org/documentation/api) but is not endorsed or certified by TMDB.
+
+---
+
+<div align="center">
+
+Made with ❤️ by [Mohamed Soliman](https://github.com/Eng-mohamed33)
+
+</div>
