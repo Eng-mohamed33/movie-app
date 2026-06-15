@@ -10,7 +10,7 @@ import "./index.css";
 export default function App() {
   return (
     <FavoritesProvider>
-      <BrowserRouter basename={process.env.PUBLIC_URL}>
+      <BrowserRouter>
         <Navbar />
         <main className="container">
           <Routes>
@@ -24,6 +24,3 @@ export default function App() {
     </FavoritesProvider>
   );
 }
-
-
-
